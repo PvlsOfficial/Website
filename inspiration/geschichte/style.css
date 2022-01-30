@@ -1,0 +1,27 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: tomato;
+    display: grid;
+    place-items: center;
+}
+.content{
+    background-color: wheat;
+    width: 800px;
+    height: 100vh;
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+}
+.head{
+    border-style:solid;
+}
+.Thema{
+    color: black;
+}
+h1{
+    text-align: center;
+}
+#antike1{
+    scale: 20%;
+}

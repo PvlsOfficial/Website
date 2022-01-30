@@ -1,4 +1,73 @@
-body{
-    background-color: black;
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
 
+:root {
+    --background: rgb(22, 22, 22);
+    --textcolor: rgb(209, 209, 209);
+    --font: Cairo;
 }
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--background);
+    display: grid;
+    place-items: center;
+    font-family: var(--font);
+}
+
+.content {
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--background);
+}
+
+content {
+    font-family: var(--font);
+    margin: auto;
+    padding: 0px;
+    align-items: center;
+    display: flex;
+    color: var(--textcolor);
+    min-width: screen;
+}
+
+#preview-section {
+    margin: auto;
+    margin-top: 40px;
+    width: 70vw;
+    height: 50vh;
+    max-width: 1200px;
+    max-height: 600px;
+}
+.beat {
+    margin: 10px;
+    padding: 0px;
+    display: flex;
+    background-color: rgb(255, 0, 0);
+    height: 200px;
+    width: 400px;
+}
+#beat1{
+    transform: translateX(0%);
+}
+#beat2{
+    transform: translateX(200%);
+}
+#beat3{
+    transform: translateX(30%);
+}
+
+
+
+
+.background {
+    position: fixed;
+    z-index: -1;
+    min-width: 100%;
+    min-height: 100%
+}
+
+audio {}

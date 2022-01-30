@@ -1,0 +1,18 @@
+header{
+    margin: 30px;
+    padding: .75rem 1.5rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.primary-head{
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+    font-weight: 300;
+    color: var(--textcolor);
+}
+.header-text{
+    display: inline;
+    color: var(--textcolor);
+}
