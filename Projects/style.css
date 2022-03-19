@@ -1,0 +1,51 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color:#000000;
+    color: white;
+}
+.container{
+    margin: 0px;
+    padding: 0px;
+    background: #111111;
+}
+.head, .footer{
+    text-align: center;
+    background-color: #000000;
+    padding: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    border-style: solid;
+    border-color: #000000;
+}
+.content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+button, .projectContent{
+    text-align: center;
+    font-size: 25px;
+    padding: 150px;
+    margin: 30px;
+    background-color:#000000;
+    color: white;
+    border-radius: 8px;
+    box-shadow:0 0 1em #888888;
+    border-style: solid;
+    border-color: white;
+    border-width: 6px;
+}
+.footerList, li{
+    display: inline-block;
+}
+li{
+    padding: 20px;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+button:hover, a:hover{
+    cursor: pointer;
+}
