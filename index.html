@@ -1,131 +1,21 @@
 <!DOCTYPE html>
-<html lang="de">
-
+<html lang="en">
 <head>
+    <style>
+        body{
+            background-color: #333333;
+            color: #ffffff;
+            display: grid;
+            place-content: center;
+            place-items: center;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/header.css">
-    <title>Beatstore</title>
+    <title>Document</title>
 </head>
-
 <body>
-    <div class="site">
-        <!-- <div class="background">
-
-            <svg width="100%" height="100%" viewBox="0 0 1366 1366" preserveAspectRatio="xMaxYMax">
-                <defs>
-                    <radialGradient id="backgroundGradient" cx="100%" cy="0%" r="100%">
-                        <stop offset="0%" style="stop-color:#252525" />
-                        <stop offset="100%" style="stop-color:#0e0e0e" />
-                    </radialGradient>
-                </defs>
-                <style>
-                    .reflect {
-                        transform: scaleX(-1);
-                    }
-
-                    .translate {
-                        transform: translateX(-200%);
-                    }
-                </style>
-                <rect viewBox="0 0 1366 1366" fill="url(#backgroundGradient)" width="100%" height="100%"></rect>
-                <path d="M0 0 H2732" id="motion" />
-                <path d="M2732 0 H0" id="motion-reverse" />
-                <g fill="#134194">
-                    <g opacity="0.08">
-                        <path
-                            d="M821.493,1245.502 C1016.37,1150.47 1215.09,1131 1366,1131 L1366,1365 L0,1365 L0,1295.568 C281.988431,1295.56995 536.909,1384.278 821.493,1245.502 Z">
-                        </path>
-                        <path class="reflect"
-                            d="M821.493,1245.502 C1016.37,1150.47 1215.09,1131 1366,1131 L1366,1365 L0,1365 L0,1295.568 C281.988431,1295.56995 536.909,1384.278 821.493,1245.502 Z">
-                        </path>
-                        <path class="translate"
-                            d="M821.493,1245.502 C1016.37,1150.47 1215.09,1131 1366,1131 L1366,1365 L0,1365 L0,1295.568 C281.988431,1295.56995 536.909,1384.278 821.493,1245.502 Z">
-                        </path>
-                        <animateMotion dur="80s" repeatCount="indefinite" rotate="auto" keyPoints="0;0.5;0.75"
-                            keyTimes="0;0.33;0.66" calcMode="linear">
-
-                            <mpath xlink:href="#motion" />
-                        </animateMotion>
-                    </g>
-                    <g opacity="0.08">
-                        <path
-                            d="M1366,1142 L1366,1365 L0,1365 L0,1305.90997 C221.894,1305.91495 536.909,1396.171 821.493,1270.283 C1016.37,1184.077 1215.09,1142 1366,1142 Z">
-                        </path>
-                        <path class="reflect"
-                            d="M1366,1142 L1366,1365 L0,1365 L0,1305.90997 C221.894,1305.91495 536.909,1396.171 821.493,1270.283 C1016.37,1184.077 1215.09,1142 1366,1142 Z">
-                        </path>
-                        <path class="translate"
-                            d="M1366,1142 L1366,1365 L0,1365 L0,1305.90997 C221.894,1305.91495 536.909,1396.171 821.493,1270.283 C1016.37,1184.077 1215.09,1142 1366,1142 Z">
-                        </path>
-                        <animateMotion dur="80s" repeatCount="indefinite" rotate="auto-reverse" keyPoints="0;0.7;0.66"
-                            keyTimes="0;0.33;0.66">
-                            <mpath xlink:href="#motion-reverse" />
-                        </animateMotion>
-                    </g>
-                    <g opacity="0.08">
-                        <path
-                            d="M634.493,1300.928 C842.464506,1248.14173 1215.09,1180 1366,1180 L1366,1365.115 L0,1365.115 L0,1335.403 C236.5,1335.40002 452.004736,1347.24625 634.493,1300.928 Z">
-                        </path>
-                        <path class="reflect"
-                            d="M634.493,1300.928 C842.464506,1248.14173 1215.09,1180 1366,1180 L1366,1365.115 L0,1365.115 L0,1335.403 C236.5,1335.40002 452.004736,1347.24625 634.493,1300.928 Z">
-                        </path>
-                        <path class="translate"
-                            d="M634.493,1300.928 C842.464506,1248.14173 1215.09,1180 1366,1180 L1366,1365.115 L0,1365.115 L0,1335.403 C236.5,1335.40002 452.004736,1347.24625 634.493,1300.928 Z">
-                        </path>
-                        <animateMotion dur="90s" repeatCount="indefinite" rotate="auto" keyPoints="0;1;0"
-                            keyTimes="0;0.5;1" calcMode="linear">
-                            <mpath xlink:href="#motion" />
-                        </animateMotion>
-                    </g>
-                </g>
-            </svg>
-        </div> -->
-        <div class="content">
-            <header>
-                <span class="header-text">Menu</span>
-                <span>
-                    <h1 class="primary-head">Header</h1>
-                </span>
-                <span class="header-text">Beats</span>
-            </header>
-            <content>
-                <div id="preview-section">
-                    <div class="beat" id="beat1">
-                        <audio controls id="music">
-                            <source src="music/boombap.mp3" type="audio/mp3">
-                            Your browser does not support the audio element.
-                        </audio>
-                    </div>
-                    <div class="beat" id="beat2">
-                        <audio controls id="music">
-                            <source src="music/boombap.mp3" type="audio/mp3">
-                            Your browser does not support the audio element.
-                        </audio>
-                    </div>
-                    <div class="beat" id="beat3">
-                        <audio controls id="music">
-                            <source src="music/boombap.mp3" type="audio/mp3">
-                            Your browser does not support the audio element.
-                        </audio>
-                    </div>
-                </div>
-            </content>
-            <footer>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ad at maiores sequi necessitatibus
-                    dignissimos impedit recusandae, blanditiis qui commodi veritatis iure voluptatibus sit iusto saepe
-                    pariatur aliquam, quidem eveniet, culpa nobis. At doloremque itaque veritatis quis harum excepturi
-                    inventore quidem ab placeat, sint magni est, voluptatibus repellendus esse expedita, id eius in!
-                    Voluptates adipisci explicabo quis consequatur minus maiores fuga perferendis repellendus soluta
-                    sed. Ipsam saepe esse ullam, praesentium nihil impedit nulla placeat illo natus enim tempora
-                    excepturi magnam, quia necessitatibus molestias tempore totam vero est qui rem reiciendis veritatis
-                    velit fuga. Maiores saepe quas corrupti rerum, ad blanditiis!</p>
-
-            </footer>
-        </div>
-    </div>
+    <h1>pvls</h1>
 </body>
-
 </html>
